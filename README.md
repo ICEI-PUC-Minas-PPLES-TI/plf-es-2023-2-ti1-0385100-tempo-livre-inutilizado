@@ -7,17 +7,17 @@ O projeto tem como propósito otimizar o aproveitamento do tempo livre inutiliza
 
 ## Alunos integrantes da equipe
 
-* Ian dos Reis Novais
-* Saulo José Nascimento Silva
-* João Antônio Nascimento Pires
-* Gabriel Lage Silva
-* Marcos Carvalho Taveira de Souza
-* Helio Ernesto Gouvea Dutra Teixeira
+* Ian dos Reis Novais.
+* Saulo José Nascimento Silva.
+* João Antônio Nascimento Pires.
+* Gabriel Lage Silva.
+* Marcos Carvalho Taveira de Souza.
+* Helio Ernesto Gouvea Dutra Teixeira.
 
 ## Professores responsáveis
 
-* Rommel Vieira Carneiro
-* Roberto Felipe Dias Ferreira da Rocha
+* Rommel Vieira Carneiro.
+* Roberto Felipe Dias Ferreira da Rocha.
 
 ## Instruções de utilização
 
