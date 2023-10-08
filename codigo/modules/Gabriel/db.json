@@ -1,0 +1,124 @@
+{
+    "interesses-container": [
+        {
+            "id": 1,
+            "interesse": "Esportes"
+        },
+        {
+            "id": 2,
+            "interesse": "Viagem"
+        },
+        {
+            "id": 3,
+            "interesse": "Bares"
+        },
+        {
+            "id": 4,
+            "interesse": "Festas"
+        },
+        {
+            "id": 5,
+            "interesse": "Carros"
+        },
+        {
+            "id": 6,
+            "interesse": "Gastronomia"
+        },
+        {
+            "id": 7,
+            "interesse": "Stand-Up"
+        },
+        {
+            "id": 8,
+            "interesse": "Academia"
+        },
+        {
+            "id": 9,
+            "interesse": "Camping"
+        },
+        {
+            "id": 10,
+            "interesse": "Leitura"
+        },
+        {
+            "id": 11,
+            "interesse": "Filmes"
+        },
+        {
+            "id": 12,
+            "interesse": "Investimentos"
+        },
+        {
+            "id": 13,
+            "interesse": "Animes"
+        },
+        {
+            "id": 14,
+            "interesse": "Karaoke"
+        },
+        {
+            "id": 15,
+            "interesse": "Musicas"
+        },
+        {
+            "id": 16,
+            "interesse": "Teatro"
+        },
+        {
+            "id": 17,
+            "interesse": "Cinema"
+        },
+        {
+            "id": 18,
+            "interesse": "Shopping"
+        },
+        {
+            "id": 19,
+            "interesse": "Animais"
+        },
+        {
+            "id": 20,
+            "interesse": "Shows"
+        },
+        {
+            "id": 21,
+            "interesse": "Museu"
+        },
+        {
+            "id": 22,
+            "interesse": "Politica"
+        },
+        {
+            "id": 23,
+            "interesse": "Arte"
+        },
+        {
+            "id": 24,
+            "interesse": "Motos"
+        },
+        {
+            "id": 25,
+            "interesse": "Boliche"
+        },
+        {
+            "id": 26,
+            "interesse": "Sorvete"
+        },
+        {
+            "id": 27,
+            "interesse": "e-Sports"
+        },
+        {
+            "id": 28,
+            "interesse": "Skincare"
+        },
+        {
+            "id": 29,
+            "interesse": "Jogos Online"
+        },
+        {
+            "id": 30,
+            "interesse": "Fotografia"
+        }
+    ]
+}
