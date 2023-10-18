@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <title>Escolha de Interesses</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
-<body>
+<body onload="criarBotao()">
   <header>
     <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container-fluid">
@@ -49,130 +50,7 @@
     </div>
     <div class="fodase">
       <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck1">Esportes</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck2">Viagem</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck4">Bares</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck5">Festas</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck6">Carros</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck7">Gastronomia</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck9">Stand-Up</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck10">Academia</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck12">Camping</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck13">Leitura</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck15">Meditação</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck16" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck16">Filmes</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck17" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck17">Investimento</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck19" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck19">Animes</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck25" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck25">Karaoke</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck27" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck27">Musica</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck28" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck28">Teatro</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck29" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck29">Cinema</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck32" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck32">Shopping</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck34" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck34">Animais</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck35" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck35">Shows</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck38" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck38">Museu</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck39" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck39">Politica</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck41" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck41">Arte</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck42" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck42">Motos</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck43" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck43">Boliche</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck44" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck44">Sorvete</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck45" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck45">E-sports</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck46" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck46">Jogos Online</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck47" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck47">Skincare</label>
-        </div>
-        <div class="interesses">
-          <input type="checkbox" class="btn-check" id="btncheck48" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck48">Fotografia</label>
-        </div>
+        <div id="botoes"></div>
       </div>
     </div>
     <div class="seguir">
