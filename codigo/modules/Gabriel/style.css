@@ -2,14 +2,13 @@ main>div>div>div>div {
   padding: 5px;
 }
 
-.navbar-brand {
-  margin-top: 5px;
-  margin-left: -60px;
+.navbar-brand img {
+  max-width: 50%;
+  height: auto;
 }
 
 .custom-navbar {
-  background-color:
-    #0ebae4;
+  background-color: #042435;
 }
 
 .navbar-nav .nav-link {
@@ -19,6 +18,10 @@ main>div>div>div>div {
 
 .navbar-nav .nav-link:hover {
   color: blanchedalmond !important;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 10px;
 }
 
 main {
