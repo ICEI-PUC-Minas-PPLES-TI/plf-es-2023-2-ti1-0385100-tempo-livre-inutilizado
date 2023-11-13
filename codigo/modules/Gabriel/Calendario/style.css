@@ -1,0 +1,151 @@
+.navbar-brand img {
+    max-width: 50%;
+    height: auto;
+}
+
+.custom-navbar {
+    background-color: #042435;
+}
+
+.navbar-nav .nav-link {
+    font-size: 24px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: blanchedalmond !important;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px;
+}
+
+main {
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+
+body {
+    background-color: #fcffea !important;
+}
+
+#container {
+    width: 770px;
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: var(--color-weekdays) ;
+    
+  }
+  #weekdays div {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 90px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--color-day);
+    margin: 5px;
+    box-shadow: 0px 0px 3px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5%;
+    border: 1px solid black
+  }
+  .day:hover {
+    background-color: var(--hover);
+  }
+  
+  .day + #currentDay {
+    background-color:var(--current-day);
+    color: #3186b4;
+    border: 1px solid #3186b4;
+  }
+  .event {
+    font-size: 10px;
+    padding: 3px;
+    background-color: #080808;
+    color: white;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+    text-transform: capitalize;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: var(--body-color) !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px rgb(41, 41, 41);
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px rgb(24, 24, 24);
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: var(--header-color);
+  }
+  #saveButton, #closeButton {
+    background-color: var(--header-button);
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+#botoes{
+    padding-bottom: 5px;
+}
+#calendario{
+    max-width: 770px;
+}
+section{
+    display: inline-block;
+}
+#outros{
+    padding: 10%;
+}
+#header{
+    text-transform:capitalize;
+}
