@@ -1,0 +1,109 @@
+.bg-custom {
+  background-color: #042435;;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: bolder;
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #b1f3ef;
+}
+
+.data-conteudo {
+  margin-bottom: -70px;
+}
+
+* {
+  text-decoration: none;
+  padding: 0%;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+.all {
+  padding: 2% 4%;
+  background-color: white;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.endereco-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.endereco-list li {
+   border: 2px solid #f0f0f0e1;
+  padding: 11px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.marcar-no-mapa {
+  background-color: #34c0d3;
+  color: white;
+  border: none;
+  padding: 10px 16.5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button.tracar-rota {
+  background-color: #0c5075;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.marcar-no-mapa:hover {
+  background-color: #11b2c7;
+}
+
+button.tracar-rota:hover {
+  background-color: #073e5c;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+}
