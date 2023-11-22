@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  padding: 10px;
+  margin: 0;
+}
+
+.card-container {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 25%;
+  padding-bottom: 25%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #f1c40f;
+  z-index: 1;
+}
+
+.favoritos-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os botões */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: bolder;
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #b1f3ef;
+}

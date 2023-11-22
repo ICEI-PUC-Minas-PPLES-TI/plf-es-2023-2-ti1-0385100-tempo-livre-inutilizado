@@ -1,0 +1,133 @@
+
+body {
+    background-color: #fcffea;
+    font-family: Arial, sans-serif;
+}
+
+
+.bg-custom {
+  background-color: #042435;;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: bolder;
+  color: white;
+  
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #b1f3ef;
+  
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+
+.activities {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+#nextPageButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#nextPageButton:hover {
+    background-color: #0056b3;
+}
+
+.selected-activity {
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.33% - 20px); 
+    border-radius: 15px; 
+    padding: 10px;
+    transition: transform 0.2s;
+    vertical-align: top;
+}
+
+.selected-activity img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.selected-activity h2 {
+    margin-top: 10px;
+}
+
+.selected-activity button {
+    vertical-align: top; 
+}
+
+.selected-activity button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin: 5px; 
+}
+
+.selected-activity button:hover {
+    background-color: #0056b3;
+ }
+
+
+  @media screen and (max-width: 480px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-link {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+    }
+  }
