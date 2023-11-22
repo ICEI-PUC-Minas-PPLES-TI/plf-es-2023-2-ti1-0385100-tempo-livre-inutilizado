@@ -63,10 +63,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5%;
-    border: 1px solid black
+    border: 1px solid black;
+    transition: transform 0.3s;
   }
   .day:hover {
     background-color: var(--hover);
+    transform: scale(1.05);
   }
   
   .day + #currentDay {

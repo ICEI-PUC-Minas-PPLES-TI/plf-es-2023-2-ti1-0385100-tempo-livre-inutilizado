@@ -33,7 +33,6 @@ function openModal(date){
   backDrop.style.display = 'block'
 }
 
-//função load() será chamada quando a pagina carregar:
 
 function load (){ 
   const date = new Date() 
@@ -70,7 +69,7 @@ function load (){
   
   calendar.innerHTML =''
 
-  // criando uma div com os dias:
+  //div com os dias:
 
   for (let i = 1; i <= paddinDays + daysMonth; i++) {
     const dayS = document.createElement('div')
@@ -78,7 +77,7 @@ function load (){
 
     const dayString = `${month + 1}/${i - paddinDays}/${year}`
 
-    //condicional para criar os dias de um mês:
+    //criar os dias de um mês:
      
     if (i > paddinDays) {
       dayS.innerText = i - paddinDays
@@ -173,7 +172,7 @@ buttons()
 load()
 eventTitleInput.addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
-    event.preventDefault(); // Impede o comportamento padrão do Enter (evita a quebra de linha no input)
-    saveEvent(); // Chame a função associada ao botão "Salvar" (substitua "saveEvent" pelo nome da sua função)
+    event.preventDefault();
+    saveEvent();
   }
 });
