@@ -1,0 +1,123 @@
+/* Cabeçalho do site */
+header {
+    height: 90px;
+    background-color: aquamarine;
+}
+
+body {
+    background-color: #b1f3ef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-width: 50%;
+    height: auto;
+}
+
+.custom-navbar {
+    background-color: #042435;
+}
+
+.navbar-nav .nav-link {
+    font-size: 19px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b1f3ef !important;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Corpo do site */
+main {
+    background-color: azure;
+    margin-bottom: 100px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#searchInput {
+    width: 80%; 
+    padding: 10px; 
+    font-size: 18px; 
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item:hover {
+    color: blue !important;
+    cursor: pointer;
+}
+
+
+
+.answer {
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+
+/* Rodapé do site */
+footer {
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}

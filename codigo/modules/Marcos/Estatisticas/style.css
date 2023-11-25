@@ -1,0 +1,103 @@
+/* Cabeçalho do site */
+header {
+    height: 120px;
+    background-color: aquamarine;
+}
+
+body {
+    background-color: #8430e3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-width: 50%;
+    height: auto;
+}
+
+.custom-navbar {
+    background-color: #042435;
+}
+
+.navbar-nav .nav-link {
+    font-size: 19px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b1f3ef !important;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Corpo do site */
+main {
+    background-color: azure;
+    margin-bottom: 100px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Tabela */
+
+#tabela {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#tabela th,
+#tabela td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabela th {
+    background-color: #333;
+    color: #fff;
+}
+
+#tabela tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabela tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Rodapé do site */
+footer {
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
