@@ -1,8 +1,5 @@
 /* Cabeçalho do site */
-header {
-    height: 90px;
-    background-color: aquamarine;
-}
+
 
 body {
     background-color: #b1f3ef;
@@ -11,27 +8,22 @@ body {
     padding: 0;
 }
 
-.navbar-brand img {
-    max-width: 50%;
-    height: auto;
-}
-
-.custom-navbar {
-    background-color: #042435;
-}
-
-.navbar-nav .nav-link {
-    font-size: 19px;
-    color: white !important;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #b1f3ef !important;
-}
-
-.navbar-nav .nav-item {
-    padding: 0 10px;
-}
+.bg-custom {
+    background-color: #042435;;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    font-weight: bolder;
+    color: white;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #b1f3ef;
+  }
 
 
 a {
