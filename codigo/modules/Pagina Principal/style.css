@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fcffea !important;
+}
+.bg-custom {
+    background-color: #042435;;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    font-weight: bolder;
+    color: white;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #b1f3ef;
+  }
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin: 50px auto; /* Centraliza o grid */
+}
+
+/* Estilos para os botões */
+.btn {
+    width: 100%; /* Ocupa toda a largura da coluna */
+    margin-top: 100px;
+    height: 100px; /* Altura dos botões */
+    font-size: 1.2em;
+}
+main{
+    margin: 10px;
+}
