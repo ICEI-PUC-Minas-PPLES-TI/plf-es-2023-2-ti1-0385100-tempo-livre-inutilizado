@@ -33,7 +33,7 @@ body {
 .btn {
     width: 100%; /* Ocupa toda a largura da coluna */
     margin-top: 100px;
-    height: 100px; /* Altura dos botões */
+    height: 200px; /* Altura dos botões */
     font-size: 1.2em;
 }
 main{
