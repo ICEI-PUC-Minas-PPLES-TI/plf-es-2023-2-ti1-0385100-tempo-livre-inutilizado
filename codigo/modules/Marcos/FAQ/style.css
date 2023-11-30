@@ -1,11 +1,9 @@
-/* Cabeçalho do site */
-
-
 body {
-    background-color: #b1f3ef;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    margin-bottom: 2%;
 }
 
 .bg-custom {
@@ -22,19 +20,13 @@ body {
   }
   
   .navbar-custom .navbar-nav .nav-link:hover {
-    color: #b1f3ef;
+    color: #34c0d3;
   }
 
 
 a {
     text-decoration: none;
     color: black;
-}
-
-/* Corpo do site */
-main {
-    background-color: azure;
-    margin-bottom: 100px;
 }
 
 .search-container {
@@ -45,71 +37,93 @@ main {
 }
 
 #searchInput {
-    width: 80%; 
+    width: 86%; 
     padding: 10px; 
     font-size: 18px; 
-}
-
-
-.container {
-    text-align: center;
+    background-color: #f2f2f2e1;
+    border: none;
+    border-radius: 10px;
 }
 
 h1 {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    margin-left: 5%;
+    margin-bottom: -2%;
+    font-weight: bolder;
+    color: black;
+    padding: 2%;
 }
 
 a {
     text-decoration: none;
-    color: #007bff;
 }
 
 h2 {
-    font-size: 40px;
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 0px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.sistema{
+    font-size: 27px;
+    margin-left: 10%;
+    color: #34c0d3;
+    font-weight: bolder;
 }
 
 .faq-list {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
+    cursor: pointer;
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 .faq-item {
-    margin-bottom: 20px;
-}
-
-.faq-item:hover {
-    color: blue !important;
+    border: 2px solid #f0f0f0e1;
     cursor: pointer;
+    margin-top: 30px;
+    padding: 1.5%;
 }
-
-
 
 .answer {
-    font-style: italic;
-    font-size: 25px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
+.fas {
+    float: right;
+    color: #34c0d3; /* Substitua #0000ff pelo código da cor desejada para o ícone */
+}
 
-
-/* Rodapé do site */
-footer {
-    height: 100px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1;
+@media screen and (max-width: 480px) {
+    .faq-item {
+        border: 2px solid #f0f0f0e1;
+        cursor: pointer;
+        margin-top: 30px;
+        padding: 5%;
+        padding-right: 40px; /* Aumente este valor conforme necessário */
+        position: relative; /* Adicionado para o posicionamento relativo */
+        overflow: hidden; /* Adicionado para evitar que o texto ultrapasse o ícone */
+    }
+    
+    .fas {
+        position: absolute;
+        top: 29px;
+        right: 10px; /* Ajuste conforme necessário */
+        transform: translateY(-50%);
+    }
+    
+    .answer {
+        font-size: 18px;
+        margin-top: 20px;
+        overflow: hidden; /* Adicionado para evitar que o texto ultrapasse o ícone */
+    }
+    
+    /* Adicione uma nova classe para o ícone quando o texto estiver visível */
+    .icon-visible .fas {
+        display: block;
+    }
 }
