@@ -1,0 +1,27 @@
+body{
+    background-color: #022136 !important;
+    
+}
+.central{
+    display: block;
+    margin:0 auto;
+    width: 30%;
+    margin-top: 5%;
+}
+#botoes{
+    display: inline-block;
+    margin-top: 20px;
+}
+#botao{
+    margin: 10px;
+}
+main{
+    text-align: center;
+}
+.escondido {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+.mostrar {
+    opacity: 1;
+}

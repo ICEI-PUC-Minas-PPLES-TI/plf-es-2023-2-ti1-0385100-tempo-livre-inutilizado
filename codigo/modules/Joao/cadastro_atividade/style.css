@@ -1,0 +1,36 @@
+label {
+  font-weight: bolder;
+}
+::placeholder {
+  color:  rgb(136, 152, 161) !important;
+  opacity: 3;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:  rgb(136, 152, 161) !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:  rgb(136, 152, 161) !important;
+  opacity:  3;
+}
+h1 {
+   text-align: center;
+}
+#msg {
+   height: 60px;
+}
+#grid-atividades tbody {
+   cursor: pointer;
+}
+
+body{
+  background-color: #022136 !important;
+  color: aliceblue;
+}
+.botoes{
+  background-color: transparent;
+  width: 218px;
+  height: 50px;
+  border-color: aliceblue;
+  color: aliceblue;
+  border-radius: 10px;
+}

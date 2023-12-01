@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Atividades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <h1>Cadastro de Atividades</h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Atividade não encontrado.</div>-->
+            </div>
+        </div>
+
+        <form id="form-atividade">
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                </div>
+                <div class="col-sm-8">
+                    <label for="inputGenero">Gênero (*)</label>
+                    <select name="Genero" class="form-control" id="inputGenero">
+                        <option value="lazer">Lazer</option>
+                        <option value="estudo">Estudo</option>
+                        <option value="show">Show</option>
+                        <option value="musica">Musica</option>
+                        <option value="filmes">Filmes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputNome">Nome (*)</label>
+                    <input type="text" class="form-control" id="inputNome" required placeholder="Nome">
+                </div>
+                <div class="col-sm-7">
+                    <label for="inputOrcamento">Orçamento (*)</label>
+                    <input type="text" class="form-control" id="inputOrcamento" required
+                        placeholder="Informe o Orçamento">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputEndereco">Endereço</label>
+                    <input type="text" class="form-control" id="inputEndereco"
+                        placeholder="Endereço ou Site da Atividade">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputCategoria">Categoria (*)</label>
+                    <select name="Genero" class="form-control" id="inputCategoria">
+                        <option value="virtual">Virtual</option>
+                        <option value="presencial">Presencial</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="button" class="botoes" id="btnInsert" value="Adicionar Atividade">
+                    <input type="button" class="botoes" id="btnUpdate" value="Editar">
+                    <input type="button" class="botoes" id="btnDelete" value="Excluir">
+                    <input type="button" class="botoes" id="btnClear" value="Limpar">
+                    <a href="lista_atividades.html"><input type="button" class="botoes" id="btnClear"
+                            value="Pesquisar Atividade"></a>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-atividades" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Gênero</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Orçamento</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-atividades">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function exibeAtividades() {
+            tableAtividades = document.getElementById("table-atividades");
+
+            // Remove todas as linhas do corpo da tabela
+            tableAtividades.innerHTML = "";
+
+            readAtividade(dados => {
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < dados.length; i++) {
+                    let atividade = dados[i];
+                    tableAtividades.innerHTML += `<tr><td scope="row">${atividade.id}</td>
+                                                    <td>${atividade.genero}</td>
+                                                    <td>${atividade.nome}</td>
+                                                    <td>${atividade.orcamento}</td>
+                                                    <td>${atividade.endereco}</td>
+                                                    <td>${atividade.categoria}</td>
+                                                </tr>`;
+                }
+            })
+        }
+
+        function init() {
+            // Define uma variável para o formulário de atividade
+            formAtividade = document.getElementById("form-atividade");
+
+            // Adiciona funções para tratar os eventos 
+            btnInsert = document.getElementById("btnInsert");
+            btnInsert.addEventListener('click', function () {
+                // Verifica se o formulário está preenchido corretamente
+                if (!formAtividade.checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoGenero = document.getElementById('inputGenero').value;
+                let campoNome = document.getElementById('inputNome').value;
+                let campoOrcamento = document.getElementById('inputOrcamento').value;
+                let campoEndereco = document.getElementById('inputEndereco').value;
+                let campoCategoria = document.getElementById('inputCategoria').value;
+
+                // Cria um objeto com os dados da atividade
+                let atividade = {
+                    genero: campoGenero,
+                    nome: campoNome,
+                    orcamento: campoOrcamento,
+                    endereco: campoEndereco,
+                    categoria: campoCategoria
+                };
+
+                // Cria a atividade no banco de dados
+                createAtividade(atividade, exibeAtividades);
+
+                // Limpa o formulario
+                formAtividade.reset()
+            });
+
+            // Trata o click do botão Alterar
+            btnUpdate = document.getElementById("btnUpdate");
+            btnUpdate.addEventListener('click', function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = document.getElementById("inputId").value;
+                if (campoId == "") {
+                    displayMessage("Selecione antes uma atividade para ser alterada.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoGenero = document.getElementById('inputGenero').value;
+                let campoNome = document.getElementById('inputNome').value;
+                let campoOrcamento = document.getElementById('inputOrcamento').value;
+                let campoEndereco = document.getElementById('inputEndereco').value;
+                let campoCategoria = document.getElementById('inputCategoria').value;
+
+                // Cria um objeto com os dados da atividade
+                let atividade = {
+                    genero: campoGenero,
+                    nome: campoNome,
+                    orcamento: campoOrcamento,
+                    endereco: campoEndereco,
+                    categoria: campoCategoria,
+                };
+
+                // Altera a atividade no banco de dados
+                updateAtividade(parseInt(campoId), atividade, exibeAtividades);
+
+                // Limpa o formulario
+                formAtividade.reset()
+            });
+
+            // Trata o click do botão Excluir
+            btnDelete = document.getElementById('btnDelete');
+            btnDelete.addEventListener('click', function () {
+                let campoId = document.getElementById('inputId').value;
+                if (campoId == "") {
+                    displayMessage("Selecione uma atividade a ser excluído.");
+                    return;
+                }
+
+                // Exclui a atividade no banco de dados
+                deleteAtividade(parseInt(campoId), exibeAtividades);
+
+                // Limpa o formulario
+                formAtividade.reset()
+            });
+
+            // Trata o click do botão Listar Atividades
+            btnClear = document.getElementById('btnClear');
+            btnClear.addEventListener('click', function () {
+                formAtividade.reset()
+            });
+
+            // Oculta a mensagem de aviso após alguns 5 segundos
+            msg = document.getElementById('msg');
+            msg.addEventListener("DOMSubtreeModified", function (e) {
+                if (e.target.innerHTML == "") return;
+                setTimeout(function () {
+                    alert = msg.getElementsByClassName("alert");
+                    if (alert.length > 0) {
+                        alert[0].remove();
+                    }
+                }, 5000);
+
+            })
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            gridAtividades = document.getElementById("grid-atividades");
+            gridAtividades.addEventListener('click', function (e) {
+                if (e.target.tagName == "TD") {
+
+                    // Obtem as colunas da linha selecionada na tabela
+                    let linhaAtividade = e.target.parentNode;
+                    colunas = linhaAtividade.querySelectorAll("td");
+
+                    // Preenche os campos do formulário com os dados da linha selecionada na tabela
+                    document.getElementById('inputId').value = colunas[0].innerText;
+                    document.getElementById('inputGenero').value = colunas[1].innerText;
+                    document.getElementById('inputNome').value = colunas[2].innerText;
+                    document.getElementById('inputOrcamento').value = colunas[3].innerText;
+                    document.getElementById('inputEndereco').value = colunas[4].innerText;
+                    document.getElementById('inputCategoria').value = colunas[5].innerText;
+                }
+            });
+
+            exibeAtividades();
+        }
+    </script>
+</body>
+
+</html>
