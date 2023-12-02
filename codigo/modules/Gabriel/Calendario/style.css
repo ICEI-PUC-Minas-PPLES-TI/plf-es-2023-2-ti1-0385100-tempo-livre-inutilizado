@@ -25,18 +25,17 @@ body {
 }
 
 #container {
-    width: 770px;
-  }
+  background-color: #f0f0f0e1;
+  border-radius: 10px;
+}
   #weekdays {
     width: 100%;
     display: flex;
     color: var(--color-weekdays) ;
-    
   }
   #weekdays div {
     width: 100px;
     padding: 10px;
-    border: 1px solid black
   }
   #calendar {
     width: 100%;
@@ -44,6 +43,7 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+
   .day {
     width: 90px;
     padding: 10px;
@@ -57,14 +57,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5%;
-    border: 1px solid black;
     transition: transform 0.3s;
   }
   .day:hover {
-    background-color: var(--hover);
+    background-color: #c5d1d3;
     transform: scale(1.05);
   }
-  
+
   .day + #currentDay {
     background-color:var(--current-day);
     color: #3186b4;
@@ -73,7 +72,7 @@ body {
   .event {
     font-size: 10px;
     padding: 3px;
-    background-color: #080808;
+    background-color: #34c0d3;
     color: white;
     border-radius: 5px;
     max-height: 55px;
@@ -112,10 +111,18 @@ body {
     border: 2px solid red;
   }
   #cancelButton, #deleteButton {
-    background-color: var(--header-color);
+    background-color: #34c0d3;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
   }
   #saveButton, #closeButton {
-    background-color: var(--header-button);
+    background-color: #34c0d3;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
   }
   #eventText {
     font-size: 14px;
@@ -130,11 +137,10 @@ body {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
   }
-#botoes{
-    padding-bottom: 5px;
-}
-#calendario{
-    max-width: 770px;
+
+#calendario {
+  max-width: 770px;
+  margin: 0 auto; 
 }
 section{
     display: inline-block;
@@ -144,4 +150,138 @@ section{
 }
 #header{
     text-transform:capitalize;
+}
+
+.monthDisplay{
+  font-weight: bolder;
+}
+
+#cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#backButton,
+#nextButton {
+  background-color: transparent;
+  color: #34c0d3;
+  border: none;
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#monthDisplay{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #34c0d3;
+}
+
+.backButton, 
+.nextButton {
+  height: 30px; 
+}
+
+#calendario,
+#outros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#calendario {
+  margin-left: 20%; 
+}
+
+#outros {
+  margin-top: -7%; 
+  text-align: center;
+}
+
+#atividades {
+  margin-top: 10px;
+  background-color: #34c0d3;
+  border: none;
+}
+
+#calendar,
+#weekdays{
+  margin-left: 6.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    #calendario {
+        margin-left: -3%; 
+    }
+
+    #outros {
+        margin-top: 0;
+        padding: 5%;
+    }
+
+    #calendar,
+    #weekdays {
+        margin-left: 3.5%;
+    }
+
+    #weekdays div {
+      width: 40px; 
+      padding: 5px;
+      font-size: 12px; 
+      margin-right: 3%;
+    }
+
+    .day {
+        width: 40px; 
+        height: 50px; 
+        padding: 5px;
+        font-size: 12px; 
+    }
+
+    #container {
+        width: 93.5%;
+        border-radius: 0;
+        margin-left: 0px;
+    }
+
+    #cabecalho {
+        font-size: 16px;
+    }
+
+    #backButton,
+    #nextButton {
+        font-size: 20px;
+    }
+
+    #monthDisplay {
+        font-size: 20px;
+    }
+
+    .event {
+        font-size: 10px;
+    }
+
+    #newEventModal,
+    #deleteEventModal {
+        width: 80%;
+        left: 10%;
+    }
+
+    #eventTitleInput {
+        width: 90%;
+    }
+
+    #cancelButton,
+    #deleteButton,
+    #saveButton,
+    #closeButton {
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    #eventText {
+        font-size: 12px;
+    }
 }

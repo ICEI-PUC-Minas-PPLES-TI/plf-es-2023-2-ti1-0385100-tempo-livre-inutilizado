@@ -5,21 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Temp-In</title>
+    <title>TempIn</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom navbar-custom" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand"
+                href="../../Pagina Principal/index.html"><img
+                    src="https://cdn.discordapp.com/attachments/934106027266281602/1159639702878560398/tempin-removebg-preview.png?ex=653afc22&is=65288722&hm=b5  f906152fe93d337306bb6aa39d7465ed92fe1c5cb208164a020d3d9009dd0a&"
+                    width="70"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Login/login.html">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main id="conteudo" class="escondido">
-        <img class="central" src="https://cdn.discordapp.com/attachments/934106027266281602/1159639702878560398/tempin-removebg-preview.png?ex=653afc22&is=65288722&hm=f906152fe93d337306bb6aa39d7465ed92fe1c5cb5b208164a020d3d9009dd0a&%22">
-        <div id="botoes">
-            <button id="botao" class="btn btn-primary" onclick="window.location.href='../Login/login.html'"><h2>Entrar</h2></button>
+        <div class="banner">
+            <p class="slogan">Porque o seu<br>tempo livre merece<br> ser extraordinário</p>
+            <div class="entrar-btn">
+                <button class="entrar"
+                    onclick="window.location.href='../Login/login.html'">Aproveite agora ➔</button>
+            </div>
+        </div>
+
+        <div class="container-cards">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-rocket fa"></i>
+                    <p class="card-title">Atividades</p>
+                    <p class="card-text">Descubra a alegria de novas atividades. Transforme sua rotina, explore o
+                        inexplorado e encontre inspiração para uma vida mais vibrante.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-users fa"></i>
+                    <p class="card-title">Amigos</p>
+                    <p class="card-text">Estabeleça conexões com seus amigos! Descubra as atividades diárias deles e
+                        participe junto para uma experiência compartilhada!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <i class="far fa-calendar-alt fa"></i>
+                    <p class="card-title">Calendário</p>
+                    <p class="card-text">Desperte sua rotina com o poder do calendário. Organize-se, planeje e
+                        aproveite cada momento com praticidade e estilo.</p>
+                </div>
+            </div>
         </div>
     </main>
-    <script src="script.js" defer></script>
 </body>
+
 </html>

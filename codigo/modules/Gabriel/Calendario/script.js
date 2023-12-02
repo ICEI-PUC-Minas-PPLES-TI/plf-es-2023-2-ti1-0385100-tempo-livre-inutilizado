@@ -2,17 +2,13 @@ let nav = 0
 let clicked = null
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []
 
-
-// variavel do modal:
 const newEvent = document.getElementById('newEventModal')
 const deleteEventModal = document.getElementById('deleteEventModal')
 const backDrop = document.getElementById('modalBackDrop')
 const eventTitleInput = document.getElementById('eventTitleInput')
-// --------
-const calendar = document.getElementById('calendar') // div calendar:
-const weekdays = ['domingo','segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'] //array with weekdays:
 
-//funções
+const calendar = document.getElementById('calendar') 
+const weekdays = ['domingo','segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'] 
 
 function openModal(date){
   clicked = date
@@ -37,8 +33,6 @@ function openModal(date){
 function load (){ 
   const date = new Date() 
   
-
-  //mudar titulo do mês:
   if(nav !== 0){
     date.setMonth(new Date().getMonth() + nav) 
   }
@@ -63,21 +57,16 @@ function load (){
 
   const paddinDays = weekdays.indexOf(dateString.split(', ') [0])
   
-  //mostrar mês e ano:
   document.getElementById('monthDisplay').innerText = `${date.toLocaleDateString('pt-br',{month: 'long'})}, ${year}`
 
   
   calendar.innerHTML =''
-
-  //div com os dias:
 
   for (let i = 1; i <= paddinDays + daysMonth; i++) {
     const dayS = document.createElement('div')
     dayS.classList.add('day')
 
     const dayString = `${month + 1}/${i - paddinDays}/${year}`
-
-    //criar os dias de um mês:
      
     if (i > paddinDays) {
       dayS.innerText = i - paddinDays
@@ -143,8 +132,6 @@ function deleteEvent(){
   localStorage.setItem('events', JSON.stringify(events))
   closeModal()
 }
-
-// botões 
 
 function buttons (){
   document.getElementById('backButton').addEventListener('click', ()=>{
