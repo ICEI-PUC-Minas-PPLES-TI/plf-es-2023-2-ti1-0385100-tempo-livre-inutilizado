@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #fcffea !important;
+    background-color: white !important;
 }
 .bg-custom {
     background-color: #042435;;
@@ -22,20 +22,87 @@ body {
   .navbar-custom .navbar-nav .nav-link:hover {
     color: #b1f3ef;
   }
+
 .botoes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
-    gap: 10px; /* Espaçamento entre os botões */
-    margin: 50px auto; /* Centraliza o grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+  margin: 50px auto; 
+  padding: 3%;
 }
 
-/* Estilos para os botões */
-.btn {
-    width: 100%; /* Ocupa toda a largura da coluna */
-    margin-top: 100px;
-    height: 200px; /* Altura dos botões */
-    font-size: 1.2em;
+.card {
+  width: 290px;
+  margin: 10px;
+  border: 2px solid #f0f0f0e1;
+  border-radius: 10px;
+  padding: 5px;
+  padding-bottom: 0;
+  text-align: left;
 }
-main{
-    margin: 10px;
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-top: 21px;
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+
+.card-entrar {
+  font-size: 16px;
+  font-weight: bold;
+  color: #34c0d3;
+  margin-top: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-entrar:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: #34c0d3;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.card-entrar:hover:before {
+  width: 30%;
+}
+
+#icone {
+  color: #34c0d3;
+}
+
+.text-inicial {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: -6%;
+  margin-left: 4%;
+}
+
+@media (max-width: 767px) {
+    .botoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+  .text-inicial {
+    font-size: 20px;
+    margin-bottom: -11%;
+  }
 }
