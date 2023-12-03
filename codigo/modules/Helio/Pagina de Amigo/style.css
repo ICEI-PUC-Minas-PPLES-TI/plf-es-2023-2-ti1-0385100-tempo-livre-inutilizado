@@ -1,0 +1,130 @@
+body {
+    background-color: #fcffea;
+}
+
+.favorite-activity {
+    display: inline-block; 
+    border-radius: 15px;
+    padding: 10px;
+    margin: 1px;
+    width: calc(33.33% - 10px);
+    text-align: center;
+    vertical-align: top; }
+
+.favorite-activity img {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 320px;
+}
+
+.navbar-brand img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .custom-navbar {
+    background-color: #042435;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 19px;
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #b1f3ef !important;
+  }
+  
+  .navbar-nav .nav-item {
+    padding: 0 10px;
+  }
+.mark-all-button,
+.remove-selected-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mark-all-button:hover,
+.remove-selected-button:hover {
+    background-color: #0056b3;
+}
+
+.favorite-activity input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+.favorite-activity label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.remove-selected-button {
+    position: absolute;
+    top: 104px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.remove-selected-button:hover {
+    background-color: #007BFF;
+}
+
+.edit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+}
+
+.amigos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.amigo-activity {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.amigo-activity img {
+    max-width: 100%;
+    height: auto;
+}
+
+.amigo-activity h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.amigo-activity p {
+    white-space: normal;
+}
