@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: 1, nome: 'HelioXXI', descrição: 'Membro desde: 21/02/2004 Última vez online: 5 dias', image: 'https://picsum.photos/250/250' },
         { id: 2, nome: 'jolonga', descrição: 'Membro desde: 15/06/2020 Última vez online: 2 meses', image: 'https://picsum.photos/250/250' },
         { id: 3, nome: 'Mcts11', descrição: 'Membro desde: 05/07/2015 Última vez online: 1 ano', image: 'https://picsum.photos/250/250' },
-        { id: 4, nome: 'gabitolaje', descrição: 'Membro desde: 30/09/2019 Última vez online: 26 minutos', image: 'https://picsum.photos/250/250' },
+        { id: 4, nome: 'gabitolage', descrição: 'Membro desde: 30/09/2019 Última vez online: 26 minutos', image: 'https://picsum.photos/250/250' },
         { id: 5, nome: 'saulinhos', descrição: 'Membro desde: 17/01/2008 Última vez online: online', image: 'https://picsum.photos/250/250' },
         { id: 6, nome: 'ihha', descrição: 'Membro desde: 24/08/2003 Última vez online: 47 segundos', image: 'https://picsum.photos/250/250' },
     ];
