@@ -15,3 +15,8 @@ function criarBotao() {
             document.getElementById('botoes').innerHTML = textoHTML;
         })
 }
+
+document.getElementById('botaoSeguir').addEventListener('click', function() {
+    alert('Interesses cadastrados!');
+    // Adicione outras ações que deseja executar ao clicar no botão aqui
+  });

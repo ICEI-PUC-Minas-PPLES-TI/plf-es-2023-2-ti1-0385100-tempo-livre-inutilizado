@@ -1,3 +1,130 @@
-body{
-    background-color: #022136 !important;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+#left-panel {
+    background: #042435;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-title,
+.cadastro-text,
+.btn-info {
+    text-align: center;
+    margin: 10px;
+}
+
+.cadastro-title{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: -5px;
+}
+
+.cadastro-text{
+  color: #d6faff;
+  font-size: 20px;
+}
+
+.btn-info {
+  background-color: #042435;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-info:hover {
+  background-color: #194e67;
+}
+
+#right-panel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#login-column {
+    max-width: 100px;
+    width: 50%;
+}
+
+#login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+#login-box label {
+    text-align: left; 
+    display: block; 
+    margin-bottom: -20px; 
+}
+
+#login-box input[type="text"],
+#login-box input[type="password"] {
+  background-color: #f0f0f0e1; 
+  border: none;
+  color: #000000;
+}
+
+
+#login-box input[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.text-info {
+  color: #042435!important;
+}
+
+#icone {
+  color: white;
+  font-size: 3em; /* Ajuste o tamanho conforme necessário */
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  margin-left: -148px;
+}
+
+.form-group #error-message {
+  position: relative;
+  margin-left: -150px;
+}
+
+.text-danger {
+  margin-left: 0px;
+  color: red !important;
+}
+
+.btn-cadastrar {
+  background-color: #f0f0f0e1;
+  color: #042435;
+}
+
+.btn-cadastrar:hover {
+  background-color: #5a798c;
+  color: #042435;
 }

@@ -1,49 +1,52 @@
-<!DOCTYPE html> submit
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
+	<title>TempIn</title>
+  <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-	<div id="login">
-		<h3 class="text-center text-white pt-5"></h3>
-		<div class="container">
-			<div id="login-row" class="row justify-content-center align-items-center">
-				<div id="login-column" class="col-md-6">
-					<div id="login-box" class="col-md-12">
-						<form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-							<h3 class="text-center text-info">Login</h3>
-							<div class="form-group">
-								<label for="username" class="text-info">Usuário</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-info">Senha</label><br>
-                                <input type="password" name="password" id="password" class="form-control">
-                            </div>
-                            <div class="form-group text-right">                                
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Enviar">
-                            </div>
-                        </form>
+  <body>
+    <div id="login-container">
+        <div id="left-panel">
+          <i class="fas fa-users fa" id="icone"></i>
+          <p class="cadastro-title">Ainda não tem cadastro?</p>
+          <p class="cadastro-text">Cadastre-se agora e aproveite<br>todos os benefícios do TempIn!</p>
+          <button type="button" class="btn btn-info btn-cadastrar" data-toggle="modal" data-target="#loginModal">Cadastrar</button>
+        </div>
+        <div id="right-panel">
+            <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                    <h3 class="text-center text-info">LOGIN</h3><br>
+                    <div class="form-group">
+                      <span id="error-message" class="text-danger"></span>
+                        <label for="username" class="text-info">Usuário</label><br>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Digite seu usuário">
                     </div>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">Novo usuario</button>
-                </div>
+                    <div class="form-group">
+                        <label for="password" class="text-info">Senha</label><br>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group text-right">
+                        <input type="submit" name="submit" class="btn btn-info btn-md" value="Entrar">
+                    </div>
+                </form>
             </div>
         </div>
-    </div>    
+    </div>
 
   <!-- Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login App</h5>
+          <h5 class="modal-title" id="loginModalLabel">Cadastro de usuário</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -61,7 +64,7 @@
                         <input type="text" name="txt_nome" id="txt_nome" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="email" class="text-info">email</label><br>
+                        <label for="email" class="text-info">E-mail</label><br>
                         <input type="text" name="txt_email" id="txt_email" class="form-control">
                     </div>
                     <div class="form-group">
@@ -87,23 +90,37 @@
     <script>
         
         // Declara uma função para processar o formulário de login
-        function processaFormLogin (event) {                
-                // Cancela a submissão do formulário para tratar sem fazer refresh da tela
-                event.preventDefault ();
+      function processaFormLogin(event) {
+          // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+          event.preventDefault();
 
-                // Obtem os dados de login e senha a partir do formulário de login
-                var username = document.getElementById('username').value;
-                var password = document.getElementById('password').value;
+          // Obtem os dados de login e senha a partir do formulário de login
+          var usernameLabel = document.querySelector('label[for="username"]');
+          var passwordLabel = document.querySelector('label[for="password"]');
+          var username = document.getElementById('username');
+          var password = document.getElementById('password');
+          var errorMessage = document.getElementById('error-message');
 
-                // Valida login e se estiver ok, redireciona para tela inicial da aplicação
-                resultadoLogin = loginUser (username, password);
-                if (resultadoLogin) {
-                    window.location.href = '../Pagina Principal/index.html';
-                }
-                else { // Se login falhou, avisa ao usuário
-                    alert ('Usuário ou senha incorretos');
-                }
-        }
+          // Limpa mensagens de erro anteriores
+          errorMessage.innerText = '';
+          username.classList.remove('error-border');
+          password.classList.remove('error-border');
+          usernameLabel.classList.remove('text-danger');
+          passwordLabel.classList.remove('text-danger');
+
+          // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+          var resultadoLogin = loginUser(username.value, password.value);
+          if (resultadoLogin) {
+              window.location.href = '../Pagina Principal/index.html';
+          } else { // Se login falhou, exibe mensagem de erro e destaca os campos
+              errorMessage.innerText = 'Usuário e/ou senha incorretos';
+              username.classList.add('error-border');
+              password.classList.add('error-border');
+              usernameLabel.classList.add('text-danger');
+              passwordLabel.classList.add('text-danger');
+          }
+      }
+
 
         function salvaLogin (event) {
             // Cancela a submissão do formulário para tratar sem fazer refresh da tela

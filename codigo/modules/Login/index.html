@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha aplicação</title>
+    <title>TempIn</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="login.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script>
         // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
         if (!usuarioCorrente.login) {
@@ -28,18 +29,12 @@
         }
 
         function initPage() {
-
-            // Associa a função de logout ao botão
             document.getElementById('btn_logout').addEventListener('click', logoutUser);
 
-            // Informa o nome do usuário logado
             document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
 
-            // Lista os usuários 
             exibeUsuarios ();
         }
-
-        // Associa ao evento de carga da página a função para verificar se o usuário está logado
         window.addEventListener('load', initPage);
     </script>
 

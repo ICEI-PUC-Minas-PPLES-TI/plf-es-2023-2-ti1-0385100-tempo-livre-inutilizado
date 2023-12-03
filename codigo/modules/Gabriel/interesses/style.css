@@ -44,5 +44,10 @@ body{
 }
 .seguir{
   padding-top: 15%;
-  padding-bottom:2% ;
+  padding-bottom:2%;
+  float: right;
+  padding-right: 5%;
+}
+#botaoSeguir{
+  border: #042435 1px solid;
 }

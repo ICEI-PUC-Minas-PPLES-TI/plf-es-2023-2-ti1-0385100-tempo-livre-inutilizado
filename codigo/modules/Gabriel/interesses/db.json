@@ -2,123 +2,123 @@
     "interesses": [
         {
             "id": 1,
-            "interesse": "Esportes"
+            "interesse": "🏈 Esportes"
         },
         {
             "id": 2,
-            "interesse": "Viagem"
+            "interesse": "✈️ Viagem"
         },
         {
             "id": 3,
-            "interesse": "Bares"
+            "interesse": "🍺 Bares"
         },
         {
             "id": 4,
-            "interesse": "Festas"
+            "interesse": "🎉 Festas"
         },
         {
             "id": 5,
-            "interesse": "Carros"
+            "interesse": "🚗 Carros"
         },
         {
             "id": 6,
-            "interesse": "Gastronomia"
+            "interesse": "🍕 Gastronomia"
         },
         {
             "id": 7,
-            "interesse": "Stand-Up"
+            "interesse": "😂 Stand-Up"
         },
         {
             "id": 8,
-            "interesse": "Academia"
+            "interesse": "🏋️‍♀️ Academia"
         },
         {
             "id": 9,
-            "interesse": "Camping"
+            "interesse": "⛺️ Camping"
         },
         {
             "id": 10,
-            "interesse": "Leitura"
+            "interesse": "📚 Leitura"
         },
         {
             "id": 11,
-            "interesse": "Filmes"
+            "interesse": "🎥 Filmes"
         },
         {
             "id": 12,
-            "interesse": "Investimentos"
+            "interesse": "💰 Investimentos"
         },
         {
             "id": 13,
-            "interesse": "Animes"
+            "interesse": "📺 Animes"
         },
         {
             "id": 14,
-            "interesse": "Karaoke"
+            "interesse": "🎤 Karaoke"
         },
         {
             "id": 15,
-            "interesse": "Musicas"
+            "interesse": "🎶 Musicas"
         },
         {
             "id": 16,
-            "interesse": "Teatro"
+            "interesse": "🎫 Teatro"
         },
         {
             "id": 17,
-            "interesse": "Cinema"
+            "interesse": "🎰 Apostas"
         },
         {
             "id": 18,
-            "interesse": "Shopping"
+            "interesse": "🛍️ Shopping"
         },
         {
             "id": 19,
-            "interesse": "Animais"
+            "interesse": "🐶 Animais"
         },
         {
             "id": 20,
-            "interesse": "Shows"
+            "interesse": "🎸 Shows"
         },
         {
             "id": 21,
-            "interesse": "Museu"
+            "interesse": "🏢 Museu"
         },
         {
             "id": 22,
-            "interesse": "Politica"
+            "interesse": "👨‍⚖️ Politica"
         },
         {
             "id": 23,
-            "interesse": "Arte"
+            "interesse": "🎨 Arte"
         },
         {
             "id": 24,
-            "interesse": "Motos"
+            "interesse": "🛵 Motos"
         },
         {
             "id": 25,
-            "interesse": "Boliche"
+            "interesse": "🎳 Boliche"
         },
         {
             "id": 26,
-            "interesse": "Sorvete"
+            "interesse": "🍦 Sorvete"
         },
         {
             "id": 27,
-            "interesse": "e-Sports"
+            "interesse": "🎮 E-Sports"
         },
         {
             "id": 28,
-            "interesse": "Skincare"
+            "interesse": "💄 Skincare"
         },
         {
             "id": 29,
-            "interesse": "Jogos Online"
+            "interesse": "💻 Jogos Online"
         },
         {
             "id": 30,
-            "interesse": "Fotografia"
+            "interesse": "📸 Fotografia"
         }
     ]
 }
