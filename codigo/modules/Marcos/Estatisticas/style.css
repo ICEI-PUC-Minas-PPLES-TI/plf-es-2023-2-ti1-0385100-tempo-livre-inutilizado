@@ -78,7 +78,7 @@ a {
 
 #chart{
     margin-top: 2%;
-    position: relative;
+    margin-left: 50px;
     left: 20%;  
     color: black;
 }
