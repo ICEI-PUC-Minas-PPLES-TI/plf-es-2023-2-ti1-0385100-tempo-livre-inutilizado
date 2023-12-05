@@ -1,8 +1,5 @@
-/* Cabeçalho do site */
-
-
 body {
-    background-color: #8430e3;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -31,9 +28,8 @@ a {
     color: black;
 }
 
-/* Corpo do site */
 main {
-    background-color: azure;
+    background-color: white;
     margin-bottom: 100px;
 }
 
@@ -42,17 +38,17 @@ main {
 }
 
 h1 {
-    background-color: #333;
-    color: #fff;
+    color: #34c0d3;
     padding: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 5%;
 }
 
 a {
     text-decoration: none;
     color: #007bff;
 }
-
-/* Tabela */
 
 #tabela {
     border-collapse: collapse;
@@ -62,34 +58,31 @@ a {
 
 #tabela th,
 #tabela td {
-    border: 1px solid #ccc;
+    border: 1px solid #34c0d3;
     padding: 8px;
     text-align: center;
 }
 
 #tabela th {
-    background-color: #333;
-    color: #fff;
+    background-color: #34c0d3;
+    color: white;
 }
 
 #tabela tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 #tabela tbody tr:hover {
-    background-color: #ddd;
+    background-color: #dafffe;
 }
 
-/* Rodapé do site */
-footer {
-    height: 100px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1;
+#chart{
+    margin-top: 2%;
+    position: relative;
+    left: 20%;  
+    color: black;
+}
+
+.bar {
+    fill: #34c0d3; /* Substitua #3498db pela cor desejada para as barras */
 }
