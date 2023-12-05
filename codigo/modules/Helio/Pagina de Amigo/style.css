@@ -2,6 +2,11 @@ body {
     background-color: #fcffea;
 }
 
+.all{
+    padding: 3%;
+    padding-top: 1%;
+}
+
 .favorite-activity {
     display: inline-block; 
     border-radius: 15px;
@@ -38,93 +43,64 @@ body {
   .navbar-nav .nav-item {
     padding: 0 10px;
   }
-.mark-all-button,
-.remove-selected-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 10px;
-}
 
-.mark-all-button:hover,
-.remove-selected-button:hover {
-    background-color: #0056b3;
-}
-
-.favorite-activity input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle; 
-}
-
-.favorite-activity label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.remove-selected-button {
-    position: absolute;
-    top: 104px;
-    right: 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.remove-selected-button:hover {
-    background-color: #007BFF;
-}
-
-.edit-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 17px;
-    margin-left: 10px;
-}
-
-.edit-button:hover {
-    background-color: #0056b3;
-}
-
-h1 {
-    text-align: center;
-}
-
-.amigos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  #Amigos {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    margin: 0 -10px; /* Ajuste a margem para metade do gap para compensar a margem negativa */
 }
 
 .amigo-activity {
-    border: 1px solid #ccc;
+    flex: 0 0 calc(50% - 20px); /* Calcule o tamanho com uma margem de 20px entre os amigos */
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0e1;
+    border-radius: 10px;
     padding: 10px;
-    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .amigo-activity img {
-    max-width: 100%;
-    height: auto;
+    margin-left: 10px;
+    width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 15px; /* Adiciona borda arredondada à imagem */
+    margin-right: 10px; /* Adiciona uma margem à direita da imagem */
 }
 
-.amigo-activity h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.amigo-details {
+    text-align: left;
+    flex-grow: 1; /* Faz com que o .amigo-details ocupe o espaço restante */
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
 }
 
-.amigo-activity p {
-    white-space: normal;
+.amigo-details h2 {
+    margin-bottom: 5px;
+}
+
+.amigo-details p {
+    margin-top: 0; /* Remove a margem superior de "Membro desde" */
+    margin-bottom: 0; /* Remove a margem inferior de "Membro desde" */
+}
+
+.remove-selected-button {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+h2{
+    color: #34c0d3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
