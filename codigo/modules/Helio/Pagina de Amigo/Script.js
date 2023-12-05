@@ -62,4 +62,4 @@ document.addEventListener("DOMContentLoaded", function() {
     removeButton.addEventListener('click', removeSelectedAmigos);
 
     renderAmigos();
-});
+}); 
