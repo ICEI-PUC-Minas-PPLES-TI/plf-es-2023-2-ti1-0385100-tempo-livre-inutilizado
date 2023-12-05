@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Atividades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <h1>Listagem de Atividades</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <!-- <div class="alert alert-warning">Atividade não encontrada.</div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10">
+                <a href="index.html">
+                    <input type="button" class="btn btn-warning" id="btnClear" value="Cadastro">
+                </a>
+            </div>
+        </div>
+
+        <form id="form-atividade">            
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <select name="filtro_orcamento" id="filtro_orcamento" onchange="ListaAtividades()" class="form-control">
+                        <option value="">Selecione o Orçamento</option>
+                        <option value="pago">Pago</option>
+                        <option value="gratis">Grátis</option>
+                    </select>
+                </div>
+                <div class="col-sm-8">
+                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaAtividades()" class="form-control">
+                        <option value="">Selecione a Categoria</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="presencial">Presencial</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-atividades" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Gênero</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Orçamento</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-atividades">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // carrega os dados a partir da API JSONServer
+        var db = []
+        readAtividade(dados => {
+            db = dados;
+            ListaAtividades()
+        });
+
+      function ListaAtividades() {
+          // Obtenha os valores dos filtros de Orçamento e Categoria
+          let filtroOrcamento = document.getElementById('filtro_orcamento').value;
+          let filtroCategoria = document.getElementById('filtro_categoria').value;
+
+          // Limpe a lista de atividades apresentadas
+          tableAtividades = document.getElementById("table-atividades");
+          tableAtividades.innerHTML = "";
+
+          // Popule a tabela com os registros do banco de dados
+          for (let index = 0; index < db.length; index++) {
+              const atividade = db[index];
+
+              // Verifique se os dados da atividade correspondem aos filtros
+              if (
+                  ((filtroOrcamento === 'pago' && parseFloat(atividade.orcamento) > 0) ||
+                  (filtroOrcamento === 'gratis' && parseFloat(atividade.orcamento) === 0) ||
+                  (filtroOrcamento === '')) &&
+                  ((filtroCategoria === 'virtual' && atividade.categoria === 'Virtual') ||
+                  (filtroCategoria === 'presencial' && atividade.categoria === 'Presencial') ||
+                  (filtroCategoria === ''))
+              ) {
+                  // Inclua a atividade na tabela
+                  tableAtividades.innerHTML += `<tr><td scope="row">${atividade.id}</td>
+                      <td>${atividade.genero}</td>
+                      <td>${atividade.nome}</td>
+                      <td>${atividade.orcamento}</td>
+                      <td>${atividade.endereco}</td>
+                      <td>${atividade.categoria}</td>
+                  </tr>`;
+              }
+          }
+      }
+
+
+    </script>
+</body>
+</html>
