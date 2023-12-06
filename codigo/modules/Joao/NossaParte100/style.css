@@ -3,10 +3,11 @@
   padding: 0%;
   font-family: Helvetica;
   box-sizing: border-box;
+  
 }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -217,7 +218,7 @@ h1 {
 }
 
 body {
-  background-color: #f4f4f4; 
+  background-color: #ffffff; 
   font-family: 'Roboto', sans-serif; 
 }
 
