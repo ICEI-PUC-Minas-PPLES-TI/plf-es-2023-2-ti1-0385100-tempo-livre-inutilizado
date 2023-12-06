@@ -266,3 +266,8 @@ body {
     max-width: 100%; /* Garante que a largura não ultrapasse 100% da div pai */
     height: 400px;
 }
+#cadastro {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
