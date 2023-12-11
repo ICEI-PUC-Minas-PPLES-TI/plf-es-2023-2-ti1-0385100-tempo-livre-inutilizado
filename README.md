@@ -1,9 +1,8 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11673799&assignment_repo_type=AssignmentRepo)
-# Nome do projeto
+![Header - TempIn](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti1-0385100-tempo-livre-inutilizado/assets/136115980/15462687-c22f-404b-a18c-21422ee31477)
 
-Tempo Livre Inutilizado.
+# TempIn
 
-O projeto tem como propósito otimizar o aproveitamento do tempo livre inutilizado, promovendo o crescimento pessoal e a satisfação. Através de estratégias e sugestões, busca incentivar a transformação de momentos ociosos em oportunidades construtivas, estimulando o aprendizado, a criatividade e o bem-estar emocional. 
+O TempIn é um projeto do curso de Engenharia de Software. O propósito é otimizar o aproveitamento do tempo livre inutilizado, promovendo o crescimento pessoal e a satisfação, através de estratégias e sugestões, que buscam incentivar a transformação de momentos ociosos em oportunidades construtivas, estimulando o aprendizado, a criatividade e o bem-estar emocional. 
 
 ## Alunos integrantes da equipe
 
@@ -21,4 +20,4 @@ O projeto tem como propósito otimizar o aproveitamento do tempo livre inutiliza
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Acesse o projeto [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11673799&assignment_repo_type=AssignmentRepo)
