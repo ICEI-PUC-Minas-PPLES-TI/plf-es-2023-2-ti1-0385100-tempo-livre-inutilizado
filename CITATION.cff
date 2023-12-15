@@ -1,65 +1,63 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
+title: TempIn
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: dos Reis Novais
+    given-names: Ian 
+  - family-names: Nascimento Silva
+    given-names: Saulo José
+  - family-names: Nascimento Pires
+    given-names: João Antônio
+  - family-names: Lage Silva
+    given-names: Gabriel 
+  - family-names: Carvalho Taveira de Souza
+    given-names: Marcos
+  - family-names: Gouveia Dutra Teixeira
+    given-names: Helio Ernesto
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Dias Ferreira da Rocha
+    given-names: Roberto Felipe 
 keywords:
-  - 
-  - 
-repository-code: 
+  - time 
+  - optimization
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti1-0385100-tempo-livre-inutilizado
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2023-12-28
 =======
 cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
+title: TempIn
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: dos Reis Novais
+    given-names: Ian 
+  - family-names: Nascimento Silva
+    given-names: Saulo José
+  - family-names: Nascimento Pires
+    given-names: João Antônio
+  - family-names: Lage Silva
+    given-names: Gabriel 
+  - family-names: Carvalho Taveira de Souza
+    given-names: Marcos
+  - family-names: Gouveia Dutra Teixeira
+    given-names: Helio Ernesto
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Dias Ferreira da Rocha
+    given-names: Roberto Felipe 
 keywords:
-  - 
-  - 
-repository-code: 
+  - time 
+  - optimization
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti1-0385100-tempo-livre-inutilizado
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2023-12-28
 >>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
