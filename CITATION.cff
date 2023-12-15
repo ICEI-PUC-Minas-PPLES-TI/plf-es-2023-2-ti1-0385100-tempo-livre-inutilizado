@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
+message: Please cite this software using these metadata.
 title: TempIn
 authors:
   - family-names: dos Reis Novais
@@ -31,6 +32,7 @@ version: 1.0.0
 date-released: 2023-12-28
 =======
 cff-version: 1.0.1
+message: Please cite this software using these metadata.
 title: TempIn
 authors:
   - family-names: dos Reis Novais
