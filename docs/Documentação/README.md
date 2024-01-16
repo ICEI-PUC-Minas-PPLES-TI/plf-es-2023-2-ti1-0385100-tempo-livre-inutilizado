@@ -2,4 +2,4 @@
 
 # Documentação do Projeto (TIDocs)
 
-Descubra os bastidores do TempIn e como nossa abordagem inovadora está transformando a maneira como você aproveita o tempo livre. Navegue pela documentação para insights profundos, estratégias de design e tudo o que você precisa para maximizar seu lazer clicando [aqui](https://iannovais.github.io/tiaw-tempin/docs/Documentação/documentacao.html).
+Descubra os bastidores do TempIn e como nossa abordagem inovadora está transformando a maneira como você aproveita o tempo livre. Navegue pela documentação para insights profundos, estratégias de design e tudo o que você precisa para maximizar seu lazer clicando [aqui](https://icei-puc-minas-pples-ti.github.io/plf-es-2023-2-ti1-0385100-tempo-livre-inutilizado/docs/Documenta%C3%A7%C3%A3o/documentacao.html).
