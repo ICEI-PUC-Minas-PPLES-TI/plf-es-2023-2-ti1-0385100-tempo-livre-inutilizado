@@ -20,4 +20,4 @@ O TempIn é um projeto do curso de Engenharia de Software. O propósito é otimi
 
 ## Instruções de utilização
 
-Acesse o projeto [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11673799&assignment_repo_type=AssignmentRepo)
+Acesse o projeto clicando [aqui](https://iannovais.github.io/tiaw-tempin/codigo/modules/Pagina%20Inicial/index.html)
